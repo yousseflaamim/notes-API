@@ -14,7 +14,7 @@ module.exports.getNotes = async (event) => {
       FilterExpression: "deleted = :d",
       ExpressionAttributeValues: {
         ":userId": userEmail,
-        ":d": false // ← فقط الملاحظات غير المحذوفة
+        ":d": false 
       }
     };
 
