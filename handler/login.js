@@ -3,8 +3,8 @@ const { docClient } = require("./db");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
-const USERS_TABLE = "UsersTable"; // نفس الاسم الموجود في serverless.yml
-const JWT_SECRET = "supersecret_local"; // يمكنك وضعه في environment
+const USERS_TABLE = "UsersTable"; 
+const JWT_SECRET = "supersecret_local"; 
 
 module.exports.login = async (event) => {
   try {
